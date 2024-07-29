@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 14%; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .link a{
+        margin-right: 10px;
+        color: white;
+        text-transform:capitalize;
+    }
+
+    .btn{
+        padding: 15px 24px;
+        background: #ee7036; 
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+    .btn:hover{
+        background: #d6591e;
+    }
+    .main{
+        height: 100vh;
+        width: 100%;
+        background-image: url("images/Group\ 37.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .main-content{
+         display: flex;
+        align-items: start;
+        height: 60vh;
+        padding: 12em 14% 0 14%;
+        justify-content: space-between;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .left h1{
+        color: white;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .left h1 span{
+        color: #d6591e;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: end;
+        gap: 14px;
+    }
+
+    .right span{
+        color: palevioletred;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .right p{
+        color: white;
+    }
+    .right button{
+        padding: 15px 25px;
+        background: none;
+        border: solid 1px #d6591e;
+        border-radius: 5px;
+        color: wheat;
+        cursor: pointer;
+        transition: ease all 0.4s;
+    }
+    .right button:hover{
+        background: #ee7036;
+        color: white;
+    }
+    .icon{
+        height: 60px;
+        width: 60px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 2px 1px 40px #fafafa;
+    }
+    .icon:hover{
+        
+        box-shadow: 2px 1px 60px #fafafa;
+    }
+    .icon img{
+        width: 100%;
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/images/Logo.svg" alt="">
+        </div>
+        <div class="links">
+            <div class="link">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+                <a href="">get in touch</a>
+            </div>
+            <div class="btn">
+                Get Start
+            </div>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="main-content">
+
+            <div class="left">
+                <h1> <span>SANDIEGO</span> <br> DESIGN <br> WEEK</h1>
+                <div class="icon">
+                    <img src="/images/location (1).png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <span>12 AUG 2021</span>
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </P>
+                <button class="btn-outline">BUY TICKET</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
